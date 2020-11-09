@@ -1,36 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <!--jedes HTML-Dokument hat einen Head und einen Body-->
+  <!-- Jedes HTML Dokument hat einen Kopf (head). Dort kommen die Metadaten rein-->
   <head>
-    <!--Im head stehen immer nur die Meta-Daten-->
-
     <meta charset="UTF-8" />
-    <title>BTA Kochen - Leckere, tolle Rezepte für Webworker</title>
+
+    <title>BTA Kochen - Tolle Rezepte für Webworker</title>
     <meta
       name="description"
-      content="Leckere Sachen für Webentwickler - Pizza, Sushi und Co"
+      content="Leckere Sachen für alle die Web arbeiten - Ravioli, Pizza und viel mehr"
     />
 
-    <!--Viewport einstellen nicht vergessen-->
+    <!-- Den Viewport einstellen nicht vergessen-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts\icons.css">
   </head>
+
   <body>
     <header>
-      <a href="index.html"
-        ><img src="img\logo.png" alt="Logo Kochen" height="40"
-      /></a>
+      <a href="#">
+        <img src="img/logo.png" alt="Logo Kochen" height="40" />
+      </a>
+
       <button id="knopf">
-        <img src="img\menu.svg" alt="Menü" height="40" />
+        <img src="img/menu.svg" alt="Burger-Menü" height="40" />
       </button>
+
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Rezepte</a></li>
-          <li><a href="#">Kategorien</a></li>
-          <li><a href="#">Über uns</a></li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Rezepte</a>
+          </li>
+          <li>
+            <a href="#">Kategorien</a>
+          </li>
+
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <main>
+      <section class="homescreen">
+        <h1>Die besten Rezepte für Webworker</h1>
+        <p>Es gibt mehr als Pizza & Ravioli</p>
+        <a href="#neuerezepte" class="button">Entdecke die Leckereien</a>
+      </section>
+
+      <section class="rezepte" id="neuerezepte">
+        <h2>Die neuesten Rezepte</h2>
+        <div class="row">
+          <!-- Karte beginnt hier-->
+          <article class="card">
+            <img src="img/burger.jpg" alt="Cheeseburger" />
+            <h3>Total leckerer Burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ab quasi cum minima ipsam suscipit labore reprehenderit.
+            </p>
+            <a href="#" class="button">Zum Rezept</a>
+          </article>
+          <!-- Karte endet hier-->
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Cheeseburger" />
+            <h3>Total leckerer Burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ab quasi cum minima ipsam suscipit labore reprehenderit.
+            </p>
+            <a href="#" class="button">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Cheeseburger" />
+            <h3>Total leckerer Burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ab quasi cum minima ipsam suscipit labore reprehenderit.
+            </p>
+            <a href="#" class="button">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Cheeseburger" />
+            <h3>Total leckerer Burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ab quasi cum minima ipsam suscipit labore reprehenderit.
+            </p>
+            <a href="#" class="button">Zum Rezept</a>
+          </article>
+        </div>
+
+        <!--Reihe endet hier-->
+      </section>
+    </main>
+    <!--Nebenelement, dass unten folgt-->
+
+    <aside class="form">
+      <p>Kein Rezept mehr verpassen</p>
+      <p>Hole dir unseren Newsletter</p>
+      <form action="" method="GET" >
+        <input type="email" name="newsletter" id="subscriber" placeholder="Deine Emailadresse">
+        <button type="submit" class="button">Abonnieren</button>
+      </form>
+
+      <footer>
+        <nav class="legal">
+          <ul>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <nav class="social">
+          <ul >
+            <li class="icon-facebook"><a href="https://www.Facebook.com/" target="blank"></a></li>
+            <li class="icon-instagram"><a href="https://www.instagram.com/" target="blank"></a></li>
+            <li class="icon-youtube"><a href="https://www.Youtube.com/" target="blank"></a></li>
+          </ul>
+        </nav>
+      </footer>
+      
+    <script src="js/menu.js"></script>
   </body>
 </html>
